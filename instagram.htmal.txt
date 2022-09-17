@@ -1,6 +1,0 @@
-<html>
-<body>
-
-loging into instagram
-</body>
-</html>
