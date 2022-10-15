@@ -1,0 +1,161 @@
+
+it is case sensitive
+
+
+********
+form validation
+event handling
+interaction with java or backend lang
+
+
+syntax of js
+<head>
+<script>
+    
+    </script>
+</head>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            console.log("Inroduction to JavaScript");
+
+            //how to creat variables
+            // var keyword follwed by variable name
+//console used for print the function. 
+//log is one function
+            var a; //declarartion of variable
+            console.log(a);
+            console.log( typeof(a));
+            a=30;//initialization
+            console.log(a);
+            console.log( typeof(a));//typeof is use to check the data type of variable
+            a="JavaScript"
+            console.log(a);
+            console.log( typeof(a));
+            a=true;
+            console.log(typeof(a));
+
+            //functions
+
+            //declarartion of function
+            //funtion is used to perform some tasks
+
+            function functionname()
+            {
+
+            }
+
+            function display()
+            {
+                console.log("we are learning functions in JavaScript");
+            }
+//Calling function
+            display()
+
+
+            function add( a, b)
+            {
+                console.log(a+b);
+            }
+
+            add(38,20)
+
+            function callFromclickButton()
+            {
+                console.log("we are calling from callFromclickButton function in JavaScript");
+                var message=document.getElementById("message");
+                console.log(message)
+                message.innnerHTML='we are calling from callFromclickButton'
+            }
+
+
+            function callFromMouseOverButton()
+            {
+                console.log("we are calling from callFromclickButton function in JavaScript");
+                var message=document.getElementById("mouseoverMessage");
+                console.log(message)
+                message.innnerHTML='we are calling from callFromMouseOverButton'
+            }
+
+            function addition(){
+                console.log("Adding two numbers")
+                var Number1=document.getElementById("num1")
+                var Number2=document.getElementById("num2")
+                console.log(number1.valve)
+                console.log(number2.valve)
+                var result=parsInt(number1.valve)+parsInt(number2.valve) //store the two numbers in var
+                console.log(result)
+var additionresult=document.getElementById(additionresult);//retriew
+additionresult.innerHTML=result
+            }
+
+
+ </script>
+    </head>
+</html>
+<body>
+    <button onclick="callFromclickButton()">Click Me</button>
+    <button onMouseOver="callFromMouseOverButton()">Mouse over</button>
+    <div id="message"></div>
+    // document object id=""
+
+
+
+
+
+
+    <form>
+<div>
+    ENTER Number1
+    <input type="text" id="num1">
+</div>
+<div>
+    ENTER Number2
+    <input type="text" id="num2">
+
+    <button type="button" onclick="addition()">Add</button>
+    <div id="additionresult">
+        
+    </div>
+
+
+
+
+    </form>
+
+
+</body>
+task
+
+
+substraction
+multiplication
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+<doctype html>
+    <html>
+        <head>
+            <script>
+                function validate(){
+                    console.log("calling validate function")
+                    var username=document.getElementById("username")
+                    console.log(username.value)
+                    console.log(username.value.length)
+                    if(username.value=='')
+                    {
+                        console.log("Please enter Username") 
+                        var errorUserName=document.getElementById("errorUserName") 
+                        errorUserName.innerHTML=("Please enter Username")
+                        errorUserName.style.color='red'
+                    }
+var email=document.getElementById("email")
+console.log(email.value)
+if (email.value=='')
+{
+    console.log("Please enter email")
+    var email=document.getElementById("erroremail")
+    erroremail.innerHTML=("Please enter email")
+    erroremail.style.color='red'
+}
+var password=document.getElementById("password")
+console.log(password.value)
+if(password.value=='')
+{
+    console.log("Please enter password")
+    var password=document.getElementById("errorpassword")
+    errorpassword.innerHTML=("Please enter password")
+    errorpassword.style.color='red'  
+}
+
+var gender=document.getElementById("gender")
+console.log(gender.value)
+if(gender.value=='')
+{
+    console.log("Please enter Gender")
+    var gender=document.getElementById("errorgender")
+    errorgender.innerHTML=("Please enter gender")
+    errorgender.style.color='red'  
+}
+                }
+
+                
+                </script>
+        </head>
+        <body>
+            <form>
+                <div>
+                    <label>Enter Username</label>
+                    <input type="text" name="username" id="username">
+                    <span id="errorUserName"></span>
+                </div>
+                <br>
+
+<div>
+    <label>Enter Email</label>
+    <input type="email" name="email" id="email">
+    <span id="erroremail"></span> //span tag is used to msg in same line
+</div>
+<br>
+<div>
+    <label>Enter password</label>
+    <input type="password" name="password" id="password">
+    <span id="errorpassword"></span>
+</div>
+    <br>
+
+    <div>
+        <label>Enter Gender</label>
+        <input type="text" name="gender" id="gender">
+        <span id="errorgender"></span>
+    </div>
+    <br>
+                    <button type="button" onclick="validate()">Register</button>
+                    <button type="reset">Reset</button>
+
+            </form>
